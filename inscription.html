@@ -38,6 +38,64 @@
                     <label for="naissance">Date de naissance</label>
                     <input type="date" id="naissance" name="naissance">
                 </p>
+                <!-- Niveau en informatique -->
+                <fieldset>
+                    <legend>Niveau en informatique</legend>
+                    <p>
+                        <input type="radio" id="debutant" name="niveau" value="debutant" checked>
+                        <label for="debutant">Débutant</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="intermediaire" name="niveau" value="intermediaire">
+                        <label for="intermediaire">Intermédiaire</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="avance" name="niveau" value="avance">
+                        <label for="avance">Avancé</label>
+                    </p>
+                </fieldset>
+
+                <!-- Ateliers souhaités -->
+                <fieldset>
+                    <legend>Ateliers souhaités</legend>
+                    <p>
+                        <input type="checkbox" id="python" name="atelier" value="python">
+                        <label for="python">Atelier Python</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="jeux-video" name="atelier" value="jeux-video">
+                        <label for="jeux-video">Atelier jeux vidéo</label>
+                    </p>
+                </fieldset>
+
+                <!-- Année d'études -->
+                <p>
+                    <label for="annee">Année d'études</label>
+                    <select id="annee" name="annee">
+                        <option value="">Choisir...</option>
+                        <option value="1">1ère année</option>
+                        <option value="2">2ème année</option>
+                        <option value="3">3ème année</option>
+                    </select>
+                </p>
+
+                <!-- Motivation -->
+                <p>
+                    <label for="motivation">Motivation</label><br>
+                    <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
+                </p>
+
+                <!-- Règlement -->
+                <p>
+                    <input type="checkbox" id="reglement" name="reglement">
+                    <label for="reglement">J'accepte le règlement du club</label>
+                </p>
+
+                <!-- Boutons -->
+                <p>
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Réinitialiser</button>
+                </p>
             </form>
         </section>
     </main>
